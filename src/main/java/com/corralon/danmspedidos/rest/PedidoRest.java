@@ -125,16 +125,16 @@ public class PedidoRest {
 	 
 	 // iii) Por Cuit y/o ID de Cliente
 	 
-	 @GetMapping(path = "/cliente/{cliente}")
+	/* @GetMapping(path = "/cliente/{cliente}")
 	    @ApiOperation(value = "Busca un cliente por ID o CUIT")
 	    public ResponseEntity<Pedido> clientePorCuit(@PathVariable String cuit){
 
 	        Optional<Pedido> c =  listaPedidos
 	                .stream()
-	                .filter(unPed -> unPed.get().equals(cuit))
+	                .filter(unPed -> unPed.getCuit().equals(cuit))
 	                .findFirst();
 	        return ResponseEntity.of(c);
-	    }
+	    }*/
 	 
 	 // iv) Buscar detalle por ID: “/api/pedido/{idPedido}/detalle/{id}”
 	 
